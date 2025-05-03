@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Decker Muffler</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1a1a1a;
+      color: #f4f4f4;
+      text-align: center;
+    }
+
+   .top-banner {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+
+}
+
+    body {
+      background-image: url('https://images2.imgbox.com/20/20/dqa4mY5a_o.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+      
+      header {
+      background-color: #000;
+      color: #fff;
+      padding: 80px 20px;
+      border-bottom: 2px solid #ffcc00;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      max-width: 250px;
+      margin-bottom: 30px;
+    }
+
+    h1, h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      color: #ffcc00;
+      text-shadow: 2px 2px 4px red;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 6rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      color: #ff4b4b;
+    }
+
+.call-now-fixed {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 12px 20px;
+  border: 4px solid red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+    .openbtn {
+      font-size: 24px;
+      cursor: pointer;
+      background-color: #ffcc00;
+      color: #000;
+      padding: 12px 20px;
+      border: 4px solid red;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 999;
+      border-radius: 6px;
+    }
+
+    .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.4s ease-in-out;
+  z-index: 998;
+  padding-top: 80px;
+  box-shadow: 4px 0 15px rgba(255, 204, 0, 0.2);
+  border-right: 4px solid red;  
+}
+
+
+    .sidebar a {
+      padding: 18px 30px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #ffcc00;
+      display: block;
+      font-weight: bold;
+      transition: background-color 0.3s, padding-left 0.3s, border-left 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #222;
+      padding-left: 40px;
+      border-left: 4px solid red;
+      color: #fff;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 2rem;
+      color: #ff4b4b;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      border: 2px solid #ffcc00;
+      border-radius: 10px;
+      background-color: #222;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+    }
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 0; /* Remove padding to ensure full width */
+  margin: 0;  /* Ensure no margin that could restrict full width */
+  width: 100%; /* Ensures full width */
+  overflow: hidden; /* Ensures nothing overflows the container */
+  margin-top: 0px; /* Adds space above the header */
+}
+
+
+.header-img {
+  width: 100vw; /* Viewport width to ensure full width of the screen */
+  height: auto;
+  display: block;
+}
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      font-size: 1.3rem;
+    }
+
+    iframe {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .facebook-card {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      background-color: #111;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+      margin-top: 20px;
+      border: 2px solid #ffcc00;
+    }
+
+    .fb-page {
+      border: none;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      background-color: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    #gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 15px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    #gallery h2 {
+      text-align: center;
+      color: yellow;
+      text-shadow: 2px 2px 4px red;
+      font-size: 2.5rem;
+      grid-column: 1 / -1;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.05);
+    }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 0 15px black;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+    .caption {
+      margin-top: 15px;
+      color: white;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .coupon-banner {
+      background-color: #ffcc00;
+      color: #000;
+      font-size: 1.4rem;
+      font-weight: bold;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      border-bottom: 2px solid red;
+    }
+
+    /* FAQ Styles */
+    .faq-item {
+      margin: 20px 0;
+      text-align: left;
+    }
+
+    .faq-question {
+      width: 100%;
+      background-color: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      padding: 15px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .faq-question:hover {
+      background-color: #e6b800;
+    }
+
+    .faq-answer {
+      background-color: #333;
+      padding: 15px;
+      margin-top: 5px;
+      border-left: 4px solid red;
+      display: none;
+      border-radius: 0 0 8px 8px;
+    }
+
+  .scroll-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: yellow;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 0 10px red;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    animation: fadeIn 1s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+
+  .fade-out {
+    opacity: 0;
+    pointer-events: none;
+  }
+  </style>
+</head>
+<body>
+
+<div class="top-banner"></div>
+
+<div id="scroll-popup" class="scroll-popup">
+  ⬇ Scroll down
+</div>
+  <!-- Sidebar -->
+  <div id="mySidebar" class="sidebar" role="navigation" aria-label="Main menu">
+    <span class="closebtn" onclick="closeNav()" aria-label="Close menu">&times;</span>
+    <a href="#about" onclick="closeNav()">About</a>
+    <a href="#services" onclick="closeNav()">Our Services</a>
+    <a href="#facebook" onclick="closeNav()">Facebook</a>
+    <a href="#contact" onclick="closeNav()">Contact & Location</a>
+    <a href="#hours" onclick="closeNav()">Hours of Operation</a>
+    <a href="#gallery" onclick="closeNav()">Photo Gallery</a>
+    <a href="#info" onclick="closeNav()">Info</a>
+    <a href="#faq" onclick="closeNav()">FAQ</a>
+    <a href="#📞 Call Now" onclick="window.location.href='tel:+13303766833'">📞 Call Now</a href>
+  </div>
+
+  <!-- Sidebar Toggle + Call Now -->
+  <button class="openbtn" onclick="openNav()" aria-label="Open navigation menu">☰</button>
+  <button class="call-now-fixed" onclick="window.location.href='tel:+13303766833'">📞 Call Now</button>
+
+  <!-- Header -->
+  <header>
+  <img 
+    src="https://web.archive.org/web/20220102111525im_/http://deckermuffler.com/img/012.jpg" 
+    alt="Decker Muffler shop logo and signage" 
+    class="header-img" 
+  />
+</header>
+  
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Decker Muffler is a family-owned automotive shop with over 25 years of industry experience. We take pride in delivering high-quality workmanship, using premium parts, and ensuring the job is done right the first time.</p>
+
+<p>We welcome walk-ins—no appointment necessary—and most services are completed within an hour, depending on workload and parts availability.</p>
+
+<p>From minor repairs to fully custom exhaust systems, Decker Muffler has you covered. Our team includes one of the area's top custom pipe benders, and we source parts directly from manufacturers to save you money by cutting out the middleman. All of our work is guaranteed, and we will beat any written estimate or advertised price.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+   <ul>
+  <li><span style="color: yellow;">Custom Exhaust.</span> Duals and performance systems.</li>
+  <li><span style="color: yellow;">Exhaust Repairs.</span> Mufflers, convertors, flex pipes, and resonators.</li>
+  <li><span style="color: yellow;">Brakes.</span> Rotors, drums, and pads as well as brake lines and master cylinders.</li>
+  <li><span style="color: yellow;">Suspension Repairs.</span> Shocks, struts, axels, ball joints, tie rods, and link pins.</li>
+  <li><span style="color: yellow;">Do you have an issue that is not listed? Just ask!</span></li>
+</ul>
+  </section>
+
+  <!-- Facebook -->
+  <section id="facebook">
+    <h2>Follow Us on Facebook</h2>
+    <div class="facebook-card">
+      <div id="fb-root"></div>
+      <div class="fb-page" data-href="https://www.facebook.com/DeckerMuffler/" data-tabs="timeline"
+           data-width="500" data-height="500" data-small-header="false"
+           data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/DeckerMuffler/" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/DeckerMuffler/">Decker Muffler</a>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact & Location</h2>
+    <p>1060 South Main Street, Akron, OH 44311</p>
+    <p>Phone: (330) 376-6833</p>
+    <iframe src="https://www.google.com/maps?q=1060+South+Main+Street,+Akron,+OH&output=embed" height="450" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- Hours -->
+  <section id="hours">
+    <h2>Hours of Operation</h2>
+    <ul>
+      <li>Monday–Friday: 8 AM – 4:30 PM</li>
+      <li>Saturday: 8 AM – 12 PM</li>
+      <li>Sunday: Closed</li>
+    </ul>
+  </section>
+
+<div class="coupon-banner">
+    <p><strong>Mention this website</strong> and save <strong>$10</strong> on any service over <strong>$100</strong>!</p>
+  </div>
+
+<div style="height: 5px;"></div>
+
+
+<!-- Gallery -->
+<section id="gallery">
+  <h2>Photos</h2>
+
+  <div class="image-container">
+  <img src="https://thumbs2.imgbox.com/1b/d1/Dsn45YQm_t.jpg" data-full="https://images2.imgbox.com/1b/d1/Dsn45YQm_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/24/69/mw0EqVdU_t.jpg" data-full="https://images2.imgbox.com/24/69/mw0EqVdU_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/6d/93/N5iPFFeH_t.jpg" data-full="https://images2.imgbox.com/6d/93/N5iPFFeH_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/fe/4f/TvX4yJTc_t.jpg" data-full="https://images2.imgbox.com/fe/4f/TvX4yJTc_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/4e/21/MVS1egkR_t.jpg" data-full="https://images2.imgbox.com/4e/21/MVS1egkR_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/27/eb/aps1dr2p_t.jpg" data-full="https://images2.imgbox.com/27/eb/aps1dr2p_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/69/be/5S6MHQUj_t.jpg" data-full="https://images2.imgbox.com/69/be/5S6MHQUj_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/45/a1/S6W8xENi_t.jpg" data-full="https://images2.imgbox.com/45/a1/S6W8xENi_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/75/33/u91i9w7Z_t.jpg" data-full="https://images2.imgbox.com/75/33/u91i9w7Z_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/b9/dd/4TgWDH7p_t.jpg" data-full="https://images2.imgbox.com/b9/dd/4TgWDH7p_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/23/73/fkQWFs4c_t.jpg" data-full="https://images2.imgbox.com/23/73/fkQWFs4c_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/ed/de/8luec4lL_t.jpg" data-full="https://images2.imgbox.com/ed/de/8luec4lL_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/bd/26/cLgb0NMH_t.jpg" data-full="https://images2.imgbox.com/bd/26/cLgb0NMH_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/f8/6c/iPcyZCqb_t.jpg" data-full="https://images2.imgbox.com/f8/6c/iPcyZCqb_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/ff/82/Ge2vrF5P_t.jpg" data-full="https://images2.imgbox.com/ff/82/Ge2vrF5P_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/a3/b6/o3FwJSYU_t.jpg" data-full="https://images2.imgbox.com/a3/b6/o3FwJSYU_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/42/9b/OPy3gp1Y_t.jpg" data-full="https://images2.imgbox.com/42/9b/OPy3gp1Y_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/c4/f4/8ttBGbeo_t.jpg" data-full="https://images2.imgbox.com/c4/f4/8ttBGbeo_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/80/7d/6ejEzdIN_t.jpg" data-full="https://images2.imgbox.com/80/7d/6ejEzdIN_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/0e/a6/C1ZpTg1k_t.jpg" data-full="https://images2.imgbox.com/0e/a6/C1ZpTg1k_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/be/8e/QkbcZxLH_t.jpg" data-full="https://images2.imgbox.com/be/8e/QkbcZxLH_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/2f/0e/Cfa9g65n_t.jpg" data-full="https://images2.imgbox.com/2f/0e/Cfa9g65n_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/cb/7e/CIYTSNW2_t.jpg" data-full="https://images2.imgbox.com/cb/7e/CIYTSNW2_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/7f/54/VfutbHha_t.jpg" data-full="https://images2.imgbox.com/7f/54/VfutbHha_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/d3/cc/qTQcL7IW_t.jpg" data-full="https://images2.imgbox.com/d3/cc/qTQcL7IW_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/85/86/FcwQ1p6k_t.jpg" data-full="https://images2.imgbox.com/85/86/FcwQ1p6k_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/64/be/vENkg2tI_t.jpg" data-full="https://images2.imgbox.com/64/be/vENkg2tI_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/a7/d3/CQETUyuY_t.jpg" data-full="https://images2.imgbox.com/a7/d3/CQETUyuY_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/6f/1a/QFhdkoFL_t.jpg" data-full="https://images2.imgbox.com/6f/1a/QFhdkoFL_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/4b/9f/SSperHV7_t.jpg" data-full="https://images2.imgbox.com/4b/9f/SSperHV7_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/68/18/IUgaM2gp_t.jpg" data-full="https://images2.imgbox.com/68/18/IUgaM2gp_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/b4/b0/qcPUZ3pk_t.jpg" data-full="https://images2.imgbox.com/b4/b0/qcPUZ3pk_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/95/5d/ZdMcLe5R_t.jpg" data-full="https://images2.imgbox.com/95/5d/ZdMcLe5R_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/f4/7b/c30cGM8S_t.jpg" data-full="https://images2.imgbox.com/f4/7b/c30cGM8S_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/3f/39/2bBQOI1W_t.jpg" data-full="https://images2.imgbox.com/3f/39/2bBQOI1W_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/1a/76/1IH8pwCb_t.jpg" data-full="https://images2.imgbox.com/1a/76/1IH8pwCb_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/16/89/fhnJ0Z9p_t.jpg" data-full="https://images2.imgbox.com/16/89/fhnJ0Z9p_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/9b/15/fmaY7mrX_t.jpg" data-full="https://images2.imgbox.com/9b/15/fmaY7mrX_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/99/5b/Z2BmV5sD_t.jpg" data-full="https://images2.imgbox.com/99/5b/Z2BmV5sD_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/cb/35/sWrbufiJ_t.jpg" data-full="https://images2.imgbox.com/cb/35/sWrbufiJ_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/a6/57/oZ4isIOJ_t.jpg" data-full="https://images2.imgbox.com/a6/57/oZ4isIOJ_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/5d/e1/ybqSM8bz_t.jpg" data-full="https://images2.imgbox.com/5d/e1/ybqSM8bz_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/4a/df/mL6iQrsT_t.jpg" data-full="https://images2.imgbox.com/4a/df/mL6iQrsT_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/0c/f1/pcPRgoUn_t.jpg" data-full="https://images2.imgbox.com/0c/f1/pcPRgoUn_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/89/50/tOCkrSlD_t.jpg" data-full="https://images2.imgbox.com/89/50/tOCkrSlD_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/78/eb/7wPfwCVV_t.jpg" data-full="https://images2.imgbox.com/78/eb/7wPfwCVV_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/2d/fa/7FD7X8bi_t.jpg" data-full="https://images2.imgbox.com/2d/fa/7FD7X8bi_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/ac/b3/JbGfzqz8_t.jpg" data-full="https://images2.imgbox.com/ac/b3/JbGfzqz8_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/10/49/MNQLwszJ_t.jpg" data-full="https://images2.imgbox.com/10/49/MNQLwszJ_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/74/07/DPtF7rlo_t.jpg" data-full="https://images2.imgbox.com/74/07/DPtF7rlo_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/ae/30/QFOoIWXR_t.jpg" data-full="https://images2.imgbox.com/ae/30/QFOoIWXR_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/f7/a8/3PGbUYxZ_t.jpg" data-full="https://images2.imgbox.com/f7/a8/3PGbUYxZ_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/2b/dd/oYLATYtD_t.jpg" data-full="https://images2.imgbox.com/2b/dd/oYLATYtD_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/2b/f2/B3wfIhEb_t.jpg" data-full="https://images2.imgbox.com/2b/f2/B3wfIhEb_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/95/55/Mw9I9GF0_t.jpg" data-full="https://images2.imgbox.com/95/55/Mw9I9GF0_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/f1/ee/w4kki0KC_t.jpg" data-full="https://images2.imgbox.com/f1/ee/w4kki0KC_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/15/66/etUta7Qk_t.jpg" data-full="https://images2.imgbox.com/15/66/etUta7Qk_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/7d/1a/PX8SpfJN_t.jpg" data-full="https://images2.imgbox.com/7d/1a/PX8SpfJN_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/5a/19/HjbA2RYE_t.jpg" data-full="https://images2.imgbox.com/5a/19/HjbA2RYE_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/7c/1b/nYWAPsmy_t.jpg" data-full="https://images2.imgbox.com/7c/1b/nYWAPsmy_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/8f/de/ZqNip2q0_t.jpg" data-full="https://images2.imgbox.com/8f/de/ZqNip2q0_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/9c/40/T83tUF1R_t.jpg" data-full="https://images2.imgbox.com/9c/40/T83tUF1R_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/5a/83/NqQyWPDs_t.jpg" data-full="https://images2.imgbox.com/5a/83/NqQyWPDs_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/77/78/7VS8rB43_t.jpg" data-full="https://images2.imgbox.com/77/78/7VS8rB43_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/95/68/xCwmsuxb_t.jpg" data-full="https://images2.imgbox.com/95/68/xCwmsuxb_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/e1/8a/efl84uum_t.jpg" data-full="https://images2.imgbox.com/e1/8a/efl84uum_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/d9/05/l8DCtTSh_t.jpg" data-full="https://images2.imgbox.com/d9/05/l8DCtTSh_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/a3/38/qJHY1lDh_t.jpg" data-full="https://images2.imgbox.com/a3/38/qJHY1lDh_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/0f/0a/ttJWTcBM_t.jpg" data-full="https://images2.imgbox.com/0f/0a/ttJWTcBM_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/7f/08/fVoAFifG_t.jpg" data-full="https://images2.imgbox.com/7f/08/fVoAFifG_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/d8/37/SztfIiCh_t.jpg" data-full="https://images2.imgbox.com/d8/37/SztfIiCh_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/be/49/cb8GJZtz_t.jpg" data-full="https://images2.imgbox.com/be/49/cb8GJZtz_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/f1/39/8eNQ1BR4_t.jpg" data-full="https://images2.imgbox.com/f1/39/8eNQ1BR4_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/e0/ef/F5aKxWp3_t.jpg" data-full="https://images2.imgbox.com/e0/ef/F5aKxWp3_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/07/dc/KHetN2Zk_t.jpg" data-full="https://images2.imgbox.com/07/dc/KHetN2Zk_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/b0/6b/cF8d3o7u_t.jpg" data-full="https://images2.imgbox.com/b0/6b/cF8d3o7u_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/ac/f3/Q03H2sBo_t.jpg" data-full="https://images2.imgbox.com/ac/f3/Q03H2sBo_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/c2/30/b7jLod53_t.jpg" data-full="https://images2.imgbox.com/c2/30/b7jLod53_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/13/cc/evSHdLzc_t.jpg" data-full="https://images2.imgbox.com/13/cc/evSHdLzc_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/64/c2/xCfqQYJD_t.jpg" data-full="https://images2.imgbox.com/64/c2/xCfqQYJD_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/6d/94/KEH58n5X_t.jpg" data-full="https://images2.imgbox.com/6d/94/KEH58n5X_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/cc/d0/8emNuRS5_t.jpg" data-full="https://images2.imgbox.com/cc/d0/8emNuRS5_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/9e/2e/8cJgOqxa_t.jpg" data-full="https://images2.imgbox.com/9e/2e/8cJgOqxa_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/d9/ac/escZqYTC_t.jpg" data-full="https://images2.imgbox.com/d9/ac/escZqYTC_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/14/55/9HPBkNcR_t.jpg" data-full="https://images2.imgbox.com/14/55/9HPBkNcR_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/cc/4e/vi5IlH2O_t.jpg" data-full="https://images2.imgbox.com/cc/4e/vi5IlH2O_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/58/07/3H4prj7U_t.jpg" data-full="https://images2.imgbox.com/58/07/3H4prj7U_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/60/df/DVbHe0Lv_t.jpg" data-full="https://images2.imgbox.com/60/df/DVbHe0Lv_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/f7/73/HwWdxrpq_t.jpg" data-full="https://images2.imgbox.com/f7/73/HwWdxrpq_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/8f/ed/KtvN3HQz_t.jpg" data-full="https://images2.imgbox.com/8f/ed/KtvN3HQz_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/d0/3b/jeMmsTnc_t.jpg" data-full="https://images2.imgbox.com/d0/3b/jeMmsTnc_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/35/d3/14SoCm8u_t.jpg" data-full="https://images2.imgbox.com/35/d3/14SoCm8u_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/13/4f/RNy9TSv2_t.jpg" data-full="https://images2.imgbox.com/13/4f/RNy9TSv2_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/da/84/vtwADy0l_t.jpg" data-full="https://images2.imgbox.com/da/84/vtwADy0l_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/22/09/n7KHZKTN_t.jpg" data-full="https://images2.imgbox.com/22/09/n7KHZKTN_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/d8/8d/90sKDqpK_t.jpg" data-full="https://images2.imgbox.com/d8/8d/90sKDqpK_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/3e/06/gUNug3O6_t.jpg" data-full="https://images2.imgbox.com/3e/06/gUNug3O6_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/66/0b/ZdhraQT7_t.jpg" data-full="https://images2.imgbox.com/66/0b/ZdhraQT7_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/9d/93/A2nljpUo_t.jpg" data-full="https://images2.imgbox.com/9d/93/A2nljpUo_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/29/cb/2Vy0HTrM_t.jpg" data-full="https://images2.imgbox.com/29/cb/2Vy0HTrM_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/fe/d9/Jr1j0m8w_t.jpg" data-full="https://images2.imgbox.com/fe/d9/Jr1j0m8w_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/a1/00/tqPySogD_t.jpg" data-full="https://images2.imgbox.com/a1/00/tqPySogD_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/bc/9e/mO3e4w8j_t.jpg" data-full="https://images2.imgbox.com/bc/9e/mO3e4w8j_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/13/4f/wTLto3f6_t.jpg" data-full="https://images2.imgbox.com/13/4f/wTLto3f6_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/50/af/sgL5psCe_t.jpg" data-full="https://images2.imgbox.com/50/af/sgL5psCe_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/7e/47/H7VDFcTQ_t.jpg" data-full="https://images2.imgbox.com/7e/47/H7VDFcTQ_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/0f/55/pXOUwfkC_t.jpg" data-full="https://images2.imgbox.com/0f/55/pXOUwfkC_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/9f/c8/bYMWeVgx_t.jpg" data-full="https://images2.imgbox.com/9f/c8/bYMWeVgx_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/40/76/MruHh8fo_t.jpg" data-full="https://images2.imgbox.com/40/76/MruHh8fo_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/fa/ea/tjz4g80B_t.jpg" data-full="https://images2.imgbox.com/fa/ea/tjz4g80B_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/4a/19/U7S6q82N_t.jpg" data-full="https://images2.imgbox.com/4a/19/U7S6q82N_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/48/37/7DIQvJ7o_t.jpg" data-full="https://images2.imgbox.com/48/37/7DIQvJ7o_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/5a/ff/QovnUnPb_t.jpg" data-full="https://images2.imgbox.com/5a/ff/QovnUnPb_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/44/ce/mwlP7J6b_t.jpg" data-full="https://images2.imgbox.com/44/ce/mwlP7J6b_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/e0/47/57CSCN8H_t.jpg" data-full="https://images2.imgbox.com/e0/47/57CSCN8H_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/09/38/gjy25chi_t.jpg" data-full="https://images2.imgbox.com/09/38/gjy25chi_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/fa/64/dAdoitBG_t.jpg" data-full="https://images2.imgbox.com/fa/64/dAdoitBG_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/65/ab/s03lnHls_t.jpg" data-full="https://images2.imgbox.com/65/ab/s03lnHls_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/b0/6c/pl4heCHS_t.jpg" data-full="https://images2.imgbox.com/b0/6c/pl4heCHS_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/de/03/W9NvY853_t.jpg" data-full="https://images2.imgbox.com/de/03/W9NvY853_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/82/5d/TwiGAJBR_t.jpg" data-full="https://images2.imgbox.com/82/5d/TwiGAJBR_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/60/0b/nYxU9wza_t.jpg" data-full="https://images2.imgbox.com/60/0b/nYxU9wza_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/48/ff/RGALnfzx_t.jpg" data-full="https://images2.imgbox.com/48/ff/RGALnfzx_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/ed/0f/xZjZQzZQ_t.jpg" data-full="https://images2.imgbox.com/ed/0f/xZjZQzZQ_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/33/d9/Wznzex3G_t.jpg" data-full="https://images2.imgbox.com/33/d9/Wznzex3G_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/ca/39/fyvlICl7_t.jpg" data-full="https://images2.imgbox.com/ca/39/fyvlICl7_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/99/3e/FlJmBKGe_t.jpg" data-full="https://images2.imgbox.com/99/3e/FlJmBKGe_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/25/44/X6xmVXT3_t.jpg" data-full="https://images2.imgbox.com/25/44/X6xmVXT3_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/46/23/sTQXhX0J_t.jpg" data-full="https://images2.imgbox.com/46/23/sTQXhX0J_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/d0/20/7Xk2cvqc_t.jpg" data-full="https://images2.imgbox.com/d0/20/7Xk2cvqc_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/7c/19/cftAkOrD_t.jpg" data-full="https://images2.imgbox.com/7c/19/cftAkOrD_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/71/be/AibzXfNA_t.jpg" data-full="https://images2.imgbox.com/71/be/AibzXfNA_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/73/ff/UxjzOQ8a_t.jpg" data-full="https://images2.imgbox.com/73/ff/UxjzOQ8a_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/c7/4e/TYjAF8pM_t.jpg" data-full="https://images2.imgbox.com/c7/4e/TYjAF8pM_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/6a/74/SD2jpXoY_t.jpg" data-full="https://images2.imgbox.com/6a/74/SD2jpXoY_o.jpg" onclick="openModal(this)">
+</div>
+<div class="image-container">
+  <img src="https://thumbs2.imgbox.com/11/d5/p89cDtpX_t.jpg" data-full="https://images2.imgbox.com/11/d5/p89cDtpX_o.jpg" onclick="openModal(this)">
+</div>
+
+
+</section>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage" alt="">
+  <div class="caption" id="modalCaption"></div>
+</div>
+<!-- Info Section -->
+<section id="info">
+  <h2>Flex Pipe, Resonator, and Muffler Information</h2>
+
+  <!-- Flex Pipe Info -->
+  <div class="faq-item">
+    <button class="faq-question">What is a Flex Pipe?</button>
+    <div class="faq-answer">
+      <p>A flex pipe serves as a flexible joint in the exhaust system, designed to prevent damage to the exhaust manifold or the exhaust system itself. Over time, flex pipes may fail due to factors such as aging or weakened motor mounts. When motor mounts are compromised, excessive movement occurs, which accelerates the wear of the flex pipe.</p>
+      <p>We offer flex pipes with an inner lining, as they are more durable, stronger, and do not produce undesirable whistling sounds, making them a superior choice for performance and reliability.</p>
+    </div>
+  </div>
+
+  <!-- Resonator Info -->
+  <div class="faq-item">
+    <button class="faq-question">What is a Resonator?</button>
+    <div class="faq-answer">
+      <p>An exhaust resonator is a cylindrical component, typically hollow, with a layer of fiberglass-like material between the shell and the core. When installed in the exhaust system, the resonator modifies the exhaust note by reducing unwanted drone sounds and making the exhaust tone smoother and quieter. It works in conjunction with the muffler to refine the sound of the exhaust.</p>
+      <p>In addition to enhancing the exhaust sound, resonators help improve engine performance, promote smoother driving, and reduce fuel consumption. While some vehicles require a resonator, others may not. Various resonator designs are available, offering flexibility based on your vehicle’s needs.</p>
+    </div>
+  </div>
+
+  <!-- Muffler Info -->
+  <div class="faq-item">
+    <button class="faq-question">What is a Muffler?</button>
+    <div class="faq-answer">
+      <p>Mufflers play a crucial role in controlling the sound emitted by your vehicle’s exhaust system. The exact sound produced by a muffler can vary significantly based on several factors, such as pipe size, muffler design, and overall exhaust configuration. As a result, the same muffler model may produce different tones on different vehicles.</p>
+      <p>Mufflers come in a wide range of styles, sizes, and configurations, each serving a distinct purpose. Below is an overview of common types of mufflers and their characteristics:</p>
+      <ul>
+        <li><span style="color: yellow;">Factory O.E.M. Style Mufflers:</span> Typically quiet, featuring a 2- or 3-baffle design. Used in standard vehicle configurations to maintain a subdued exhaust tone.</li>
+        <li><span style="color: yellow;">Flow-Through Mufflers:</span> Use a straight-through design, similar to a glass-pack or resonator. Provide performance similar to a glass-pack but are shaped like a traditional muffler for easier installation.</li>
+        <li><span style="color: yellow;">Aluminized vs. Stainless Mufflers:</span> Aluminized mufflers are more affordable but have a shorter lifespan, while stainless steel mufflers are more durable, though pricier. Verify the material composition before purchase.</li>
+        <li><span style="color: yellow;">Chambered Mufflers:</span> Ideal for street machines and muscle cars, these mufflers produce an aggressive exhaust note and enhanced performance. The chamber design affects the sound produced.</li>
+        <li><strong><span style="color: yellow;">Turbo Mufflers:</span></strong> Maintain a relatively quiet tone under acceleration, producing a mild rumble. They feature less restrictive tubing to improve exhaust flow.</li>
+        <li><span style="color: yellow;">Glass-Pack Resonator Mufflers:</span> A straight-through design with fiberglass packing, resulting in minimal exhaust flow restriction. These are the loudest mufflers unless opting for a straight pipe.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions – Catalytic Converters</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I use an aftermarket catalytic converter to replace a defective one on my California-registered, OBD II vehicle?</button>
+      <div class="faq-answer">
+        <p>Yes, provided it’s  California Air Resources Board-approved for your specific vehicle and engine size. It must also have the required markings and E.O. number on the converter body like D-280-73, D-280-77, D-280-79, or D-280-80 on the converter.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can a functioning catalytic converter be removed from a vehicle?</button>
+      <div class="faq-answer">
+        <p>No. Removing a working converter violates federal and state law and can result in fines up to $2,500 per incident.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can pre-catalytic converters (pre-cats) be removed from a vehicle?</button>
+      <div class="faq-answer">
+        <p>No, unless proven defective and replaced with an approved unit designed for that application.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can two catalytic converters be replaced with a single aftermarket converter?</button>
+      <div class="faq-answer">
+        <p>Sometimes, yes—if approved for that vehicle (like a 1993 Ford F-Series) and installed per manufacturer guidelines.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What type of converter is required if the engine has been swapped?</button>
+      <div class="faq-answer">
+        <p>The emissions system must match the original certified engine and chassis. Contact the EPA or inspection station for proper guidance.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can a two-way catalytic converter be replaced with a three-way converter?</button>
+      <div class="faq-answer">
+        <p>Yes, if the three-way converter is approved and tested for that purpose under EPA aftermarket procedures.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Decker Muffler | All Rights Reserved</p>
+  </footer>
+
+  <!-- Sidebar Script -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+    }
+
+    // FAQ Toggle Script
+    const faqButtons = document.querySelectorAll('.faq-question');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+<!-- Coupon Banner -->
+  
+  <!-- Facebook SDK -->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="FbSdkNonce"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    const popup = document.getElementById('scroll-popup');
+    if (window.scrollY > 10 && !popup.classList.contains('fade-out')) {
+      popup.classList.add('fade-out');
+    }
+  });
+</script>
+
+<script>
+function openModal(imgElement) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const caption = document.getElementById("modalCaption");
+
+  modalImg.src = imgElement.dataset.full;
+  caption.textContent = imgElement.alt;
+  modal.style.display = "flex";
+}
+
+function closeModal(event) {
+  if (event && event.target.id === "modalImage") return;
+  document.getElementById("imageModal").style.display = "none";
+}
+</script>
+
+<!-- Modal -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="modalCaption"></div>
+</div>
+
+</body>
+</html>
